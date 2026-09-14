@@ -1,0 +1,46 @@
+<title>Ilya Pavlukhin — Flash Banners & Animation Portfolio</title>
+<meta name="description" content="Портфолио: Flash-баннеры (проигрываются через Ruffle) и 2D-анимации" />
+<link rel="stylesheet" href="css/style.css" />
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Ilya Pavlukhin</a>
+    <ul class="nav-links">
+      <li><a href="#banners">Баннеры</a></li>
+      <li><a href="#animations">Анимация</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="block wrap" id="banners">
+    <div class="banner-grid" id="banner-grid"></div>
+  </section>
+
+  <section class="block wrap" id="animations">
+    <div class="video-grid" id="video-grid"></div>
+    <a class="channel-link" href="https://www.youtube.com/@SuselMan1/videos" target="_blank" rel="noopener">
+      Все видео на YouTube →
+    </a>
+  </section>
+</main>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3 id="modal-title"></h3>
+        <div class="meta" id="modal-meta"></div>
+      </div>
+      <button class="modal-close" id="modal-close" aria-label="Закрыть">&times;</button>
+    </div>
+    <div class="modal-stage">
+      <div class="modal-stage-inner" id="modal-stage-inner"></div>
+    </div>
+    <div class="modal-foot">
+      Воспроизведение через <a href="https://ruffle.rs" target="_blank" rel="noopener">ruffle.rs</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
